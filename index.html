@@ -1,369 +1,335 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SOS Informática | Especialistas em Notebooks e Desktops em Rio Verde</title>
-<meta name="description" content="SOS Informática em Rio Verde. Especialistas em notebooks e desktops. Mais de 651 avaliações no Google, 20 anos de experiência, diagnóstico gratuito e orçamento sem compromisso.">
+<meta name="description" content="SOS Informática em Rio Verde. Especialistas em notebooks e desktops. Mais de 651 avaliações no Google, 20 anos de experiência e diagnóstico gratuito.">
 
 <style>
 :root{
---azul:#071f4a;
---azul-claro:#0d3d75;
+--azul:#062b63;
+--vermelho:#d71920;
 --amarelo:#fff200;
---vermelho:#e32222;
---cinza:#f5f7fb;
---texto:#172033;
+--fundo:#f7f8fb;
+--texto:#1d2733;
+--cinza:#6b7280;
 }
 
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif;}
-body{background:white;color:var(--texto);line-height:1.6;}
-a{text-decoration:none;}
-
-.header{
-background:#050b18;
-padding:12px 18px;
-position:sticky;
-top:0;
-z-index:10;
-box-shadow:0 2px 12px rgba(0,0,0,.22);
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
 }
 
-.header-inner{
-max-width:1120px;
-margin:auto;
+body{
+background:var(--fundo);
+color:var(--texto);
+line-height:1.6;
+}
+
+a{
+text-decoration:none;
+}
+
+.hero{
+min-height:92vh;
 display:flex;
 align-items:center;
-justify-content:space-between;
-gap:16px;
+justify-content:center;
+padding:50px 20px;
+background:linear-gradient(180deg,#ffffff 0%,#f7f8fb 100%);
 }
 
-.logo-wrap{
-background:#fff200;
-border-radius:12px;
-padding:8px 14px;
-display:flex;
+.hero-box{
+max-width:1050px;
+width:100%;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
 align-items:center;
 }
 
 .logo{
-height:64px;
-max-width:230px;
-object-fit:contain;
+display:block;
+max-width:300px;
+margin:0 auto 35px;
 }
 
-.header-phone{
-color:white;
-font-weight:800;
-font-size:16px;
+.hero-text{
+text-align:center;
 }
 
-.hero{
-background:linear-gradient(135deg,#050b18,#071f4a 55%,#0d3d75);
-color:white;
-padding:64px 20px 52px;
-}
-
-.hero-inner{
-max-width:1120px;
-margin:auto;
-display:grid;
-grid-template-columns:1.1fr .9fr;
-gap:34px;
-align-items:center;
-}
-
-.badge{
-display:inline-block;
-background:rgba(255,242,0,.15);
-color:var(--amarelo);
-border:1px solid rgba(255,242,0,.4);
-padding:8px 14px;
-border-radius:999px;
-font-weight:800;
+.hero-text h1{
+font-size:42px;
+line-height:1.15;
+color:var(--azul);
 margin-bottom:18px;
 }
 
-.hero h1{
-font-size:46px;
-line-height:1.08;
-margin-bottom:18px;
-letter-spacing:-.5px;
-}
-
-.hero p{
-font-size:20px;
-color:#eef4ff;
+.hero-text p{
+font-size:19px;
+color:var(--cinza);
 margin-bottom:10px;
 }
 
-.hero-proof{
-display:flex;
-flex-wrap:wrap;
-gap:10px;
-margin:22px 0;
-}
-
-.hero-proof span{
-background:rgba(255,255,255,.1);
-border:1px solid rgba(255,255,255,.18);
-padding:10px 13px;
-border-radius:10px;
+.rating{
+font-size:19px;
 font-weight:800;
+color:#111;
+margin:22px 0;
 }
 
 .btn{
 display:inline-block;
 background:var(--vermelho);
 color:white;
-padding:16px 26px;
-border-radius:10px;
+padding:16px 30px;
+border-radius:8px;
 font-weight:900;
-box-shadow:0 10px 25px rgba(227,34,34,.35);
+margin-top:12px;
+box-shadow:0 8px 22px rgba(215,25,32,.25);
 }
 
-.btn-yellow{
-background:var(--amarelo);
-color:#111;
-box-shadow:none;
-}
-
-.hero-card{
+.hero-photo{
 background:white;
-color:var(--texto);
 border-radius:18px;
-padding:24px;
-box-shadow:0 18px 50px rgba(0,0,0,.28);
+padding:18px;
+box-shadow:0 12px 35px rgba(0,0,0,.08);
 }
 
-.photo-placeholder{
-height:260px;
-background:linear-gradient(135deg,#e5e7eb,#f8fafc);
-border:2px dashed #b8c0cc;
+.placeholder{
+height:360px;
 border-radius:14px;
+background:#e9edf3;
 display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
-font-weight:900;
-color:#5d6675;
-padding:20px;
+color:#657184;
+font-weight:800;
+border:2px dashed #c4ccd8;
 }
 
-.trust-bar{
-background:var(--amarelo);
-color:#111;
-padding:18px 20px;
+.strip{
+background:white;
+padding:28px 20px;
+border-top:1px solid #e5e7eb;
+border-bottom:1px solid #e5e7eb;
 }
 
-.trust-inner{
-max-width:1120px;
+.strip-grid{
+max-width:1050px;
 margin:auto;
 display:grid;
 grid-template-columns:repeat(4,1fr);
-gap:12px;
+gap:20px;
 text-align:center;
-font-weight:900;
 }
 
-.container{
-max-width:1120px;
+.strip-grid strong{
+display:block;
+font-size:26px;
+color:var(--azul);
+}
+
+.strip-grid span{
+color:var(--cinza);
+font-weight:700;
+}
+
+.section{
+max-width:1050px;
 margin:auto;
-padding:54px 20px;
+padding:60px 20px;
 }
 
-.section-title{
-text-align:center;
+.section h2{
 font-size:34px;
-line-height:1.15;
+text-align:center;
 color:var(--azul);
 margin-bottom:12px;
 }
 
-.section-subtitle{
+.section-sub{
 text-align:center;
+color:var(--cinza);
 font-size:18px;
-max-width:760px;
-margin:0 auto 32px;
-color:#526071;
+margin-bottom:35px;
 }
 
-.reviews{
+.cards{
 display:grid;
 grid-template-columns:repeat(3,1fr);
-gap:18px;
+gap:22px;
 }
 
-.review{
+.card{
 background:white;
 border-radius:16px;
-padding:22px;
-box-shadow:0 8px 24px rgba(15,23,42,.08);
-border:1px solid #e8edf5;
+padding:26px;
+box-shadow:0 8px 24px rgba(0,0,0,.06);
+border:1px solid #edf0f5;
 }
 
-.stars{
-color:#f7b500;
-font-size:20px;
-margin-bottom:10px;
-}
-
-.review strong{
-display:block;
-margin-top:14px;
+.card h3{
 color:var(--azul);
-}
-
-.services{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:18px;
-}
-
-.service{
-background:white;
-border:1px solid #e8edf5;
-border-radius:16px;
-padding:24px;
-box-shadow:0 8px 24px rgba(15,23,42,.06);
-}
-
-.service h3{
-color:var(--azul);
-font-size:20px;
+font-size:21px;
 margin-bottom:8px;
+}
+
+.card p{
+color:var(--cinza);
 }
 
 .gallery{
 display:grid;
 grid-template-columns:repeat(4,1fr);
-gap:18px;
+gap:20px;
 }
 
-.gallery-card{
+.gallery-item{
 background:white;
 border-radius:16px;
 overflow:hidden;
-border:1px solid #e8edf5;
-box-shadow:0 8px 24px rgba(15,23,42,.06);
+box-shadow:0 8px 24px rgba(0,0,0,.06);
 }
 
-.gallery-card .photo-placeholder{
-height:210px;
-border:0;
+.gallery-item .placeholder{
+height:220px;
 border-radius:0;
+border:0;
 }
 
-.gallery-card p{
+.gallery-item p{
 padding:14px;
-font-weight:900;
+font-weight:800;
 text-align:center;
 color:var(--azul);
 }
 
-.social{
-background:var(--cinza);
-}
-
-.final-cta{
-background:linear-gradient(135deg,var(--azul-claro),var(--azul));
+.cta{
+background:var(--azul);
 color:white;
 text-align:center;
-padding:64px 20px;
+padding:60px 20px;
 }
 
-.final-cta h2{
-font-size:36px;
+.cta h2{
+font-size:34px;
 margin-bottom:12px;
 }
 
-.final-cta p{
-font-size:19px;
-color:#eef4ff;
+.cta p{
+font-size:18px;
 margin-bottom:8px;
 }
 
-.address{
-margin:20px 0 24px;
-font-weight:800;
+.cta .btn{
+background:var(--amarelo);
+color:#111;
 }
 
 footer{
-background:#050b18;
+background:#111827;
 color:white;
 text-align:center;
 padding:28px 20px;
 font-size:14px;
 }
 
-.whatsapp-float{
+.whatsapp{
 position:fixed;
 right:18px;
 bottom:18px;
 background:#25d366;
 color:white;
-width:64px;
-height:64px;
+width:60px;
+height:60px;
 border-radius:50%;
 display:flex;
 align-items:center;
 justify-content:center;
-font-size:32px;
+font-size:28px;
 font-weight:900;
-box-shadow:0 12px 28px rgba(0,0,0,.25);
-z-index:20;
+box-shadow:0 10px 25px rgba(0,0,0,.25);
 }
 
-@media(max-width:900px){
-.hero-inner{grid-template-columns:1fr;}
-.hero h1{font-size:34px;}
-.trust-inner,.reviews,.services,.gallery{grid-template-columns:1fr 1fr;}
-.header-phone{display:none;}
+@media(max-width:850px){
+.hero-box{
+grid-template-columns:1fr;
+gap:35px;
 }
 
-@media(max-width:560px){
-.hero{padding:40px 18px 36px;}
-.logo{height:52px;max-width:190px;}
-.hero h1{font-size:29px;}
-.hero p{font-size:17px;}
-.trust-inner,.reviews,.services,.gallery{grid-template-columns:1fr;}
-.section-title{font-size:28px;}
-.final-cta h2{font-size:28px;}
-.btn{width:100%;text-align:center;}
+.hero{
+padding-top:35px;
+}
+
+.hero-text h1{
+font-size:32px;
+}
+
+.logo{
+max-width:240px;
+margin-bottom:25px;
+}
+
+.strip-grid,
+.cards,
+.gallery{
+grid-template-columns:1fr 1fr;
+}
+}
+
+@media(max-width:520px){
+.strip-grid,
+.cards,
+.gallery{
+grid-template-columns:1fr;
+}
+
+.hero-photo{
+display:none;
+}
+
+.hero{
+min-height:auto;
+}
+
+.btn{
+width:100%;
+text-align:center;
+}
 }
 </style>
+
 </head>
 
 <body>
 
-<header class="header">
-<div class="header-inner">
-<div class="logo-wrap">
-<img class="logo" src="logo-sos.webp" alt="SOS Informática">
-</div>
-<div class="header-phone">(64) 3621-3682</div>
-</div>
-</header>
-
 <section class="hero">
-<div class="hero-inner">
+<div class="hero-box">
 
-<div>
-<span class="badge">20 anos de experiência em Rio Verde</span>
+<div class="hero-text">
+<img class="logo" src="logo-sos.webp" alt="SOS Informática">
+
 <h1>Especialistas em Notebooks e Desktops em Rio Verde</h1>
-<p>Diagnóstico gratuito, orçamento sem compromisso e atendimento local para quem precisa resolver rápido.</p>
 
-<div class="hero-proof">
-<span>⭐ 651+ avaliações</span>
-<span>Loja física</span>
-<span>WhatsApp direto</span>
+<p>Há 20 anos ajudando clientes de Rio Verde com manutenção, reparo e melhoria de desempenho.</p>
+
+<div class="rating">★★★★★ Mais de 651 avaliações no Google</div>
+
+<p>Diagnóstico gratuito • Orçamento sem compromisso</p>
+
+<a class="btn" href="https://wa.me/556436213682?text=Ol%C3%A1%2C%20vim%20pelo%20Google%20e%20quero%20um%20or%C3%A7amento%20para%20meu%20notebook.">
+Solicitar orçamento
+</a>
 </div>
 
-<a class="btn" href="https://wa.me/556436213682?text=Ol%C3%A1%2C%20vim%20pelo%20Google%20e%20quero%20um%20or%C3%A7amento%20para%20meu%20notebook.">SOLICITAR ORÇAMENTO</a>
-</div>
-
-<div class="hero-card">
-<div class="photo-placeholder">
+<div class="hero-photo">
+<div class="placeholder">
 FOTO PRINCIPAL<br>
 Bancada técnica ou reparo em notebook
 </div>
@@ -372,94 +338,59 @@ Bancada técnica ou reparo em notebook
 </div>
 </section>
 
-<section class="trust-bar">
-<div class="trust-inner">
-<div>⭐ 651+ avaliações</div>
-<div>🕒 20 anos</div>
-<div>🏢 Loja física</div>
-<div>🔧 Diagnóstico gratuito</div>
+<section class="strip">
+<div class="strip-grid">
+<div><strong>651+</strong><span>Avaliações</span></div>
+<div><strong>20</strong><span>Anos de mercado</span></div>
+<div><strong>Loja</strong><span>Física em Rio Verde</span></div>
+<div><strong>Grátis</strong><span>Diagnóstico inicial</span></div>
 </div>
 </section>
 
-<section class="social">
-<div class="container">
-<h2 class="section-title">Confiança de quem já conhece</h2>
-<p class="section-subtitle">Centenas de clientes já avaliaram a SOS Informática no Google.</p>
+<section class="section">
+<h2>Serviços mais procurados</h2>
+<p class="section-sub">Soluções diretas para quem precisa recuperar o notebook ou computador.</p>
 
-<div class="reviews">
-<div class="review">
-<div class="stars">★★★★★</div>
-<p>Atendimento transparente, com explicação do problema e orçamento antes da execução.</p>
-<strong>Cliente SOS Informática</strong>
-</div>
-
-<div class="review">
-<div class="stars">★★★★★</div>
-<p>Equipe ágil e cuidadosa para quem usa o notebook no trabalho e precisa resolver com segurança.</p>
-<strong>Cliente SOS Informática</strong>
-</div>
-
-<div class="review">
-<div class="stars">★★★★★</div>
-<p>Loja física, estrutura técnica e profissionais experientes em manutenção de notebooks e computadores.</p>
-<strong>Cliente SOS Informática</strong>
-</div>
-</div>
+<div class="cards">
+<div class="card"><h3>Troca de tela</h3><p>Para telas quebradas, apagadas ou com falhas de imagem.</p></div>
+<div class="card"><h3>Reparo de dobradiça</h3><p>Correção de tampa, carcaça e abertura danificada.</p></div>
+<div class="card"><h3>Troca de teclado</h3><p>Correção de teclas falhando, travadas ou sem funcionamento.</p></div>
+<div class="card"><h3>Upgrade SSD</h3><p>Mais velocidade para ligar, abrir programas e trabalhar melhor.</p></div>
+<div class="card"><h3>Limpeza interna</h3><p>Manutenção para reduzir aquecimento e melhorar desempenho.</p></div>
+<div class="card"><h3>Formatação</h3><p>Otimização do sistema para uso diário com mais estabilidade.</p></div>
 </div>
 </section>
 
-<section class="container">
-<h2 class="section-title">Serviços mais procurados</h2>
-<p class="section-subtitle">Manutenção, reparo e melhoria de desempenho para notebooks e desktops.</p>
-
-<div class="services">
-<div class="service"><h3>Troca de tela</h3><p>Substituição de tela quebrada, apagada ou com falhas de imagem.</p></div>
-<div class="service"><h3>Reparo de dobradiça</h3><p>Correção de carcaça, tampa e abertura danificada do notebook.</p></div>
-<div class="service"><h3>Troca de teclado</h3><p>Correção de teclas falhando, travadas ou sem funcionamento.</p></div>
-<div class="service"><h3>Upgrade SSD</h3><p>Mais velocidade para ligar, abrir programas e trabalhar melhor.</p></div>
-<div class="service"><h3>Limpeza interna</h3><p>Manutenção preventiva para reduzir aquecimento e melhorar desempenho.</p></div>
-<div class="service"><h3>Formatação</h3><p>Otimização do sistema, instalação e organização para uso diário.</p></div>
-</div>
-
-<p style="text-align:center;margin-top:28px;">
-<a class="btn" href="https://wa.me/556436213682?text=Ol%C3%A1%2C%20quero%20solicitar%20um%20or%C3%A7amento.">FALAR COM A SOS</a>
-</p>
-</section>
-
-<section class="container">
-<h2 class="section-title">Nossa estrutura</h2>
-<p class="section-subtitle">Adicione aqui fotos reais da bancada, reparos e equipe. A fachada fica por último para reforçar a presença física.</p>
+<section class="section">
+<h2>Nossa estrutura</h2>
+<p class="section-sub">Depois você troca estes espaços por fotos reais de bancada, reparo e fachada.</p>
 
 <div class="gallery">
-<div class="gallery-card"><div class="photo-placeholder">FOTO 1<br>Bancada técnica</div><p>Bancada técnica</p></div>
-<div class="gallery-card"><div class="photo-placeholder">FOTO 2<br>Reparo em notebook</div><p>Reparo em notebook</p></div>
-<div class="gallery-card"><div class="photo-placeholder">FOTO 3<br>Técnico trabalhando</div><p>Equipe técnica</p></div>
-<div class="gallery-card"><div class="photo-placeholder">FOTO 4<br>Fachada da loja</div><p>Loja física</p></div>
+<div class="gallery-item"><div class="placeholder">FOTO 1<br>Bancada</div><p>Bancada técnica</p></div>
+<div class="gallery-item"><div class="placeholder">FOTO 2<br>Reparo</div><p>Reparo em notebook</p></div>
+<div class="gallery-item"><div class="placeholder">FOTO 3<br>Equipe</div><p>Equipe técnica</p></div>
+<div class="gallery-item"><div class="placeholder">FOTO 4<br>Fachada</div><p>Loja física</p></div>
 </div>
 </section>
 
-<section class="final-cta">
+<section class="cta">
 <h2>Precisa de ajuda com seu notebook?</h2>
-<p>Mais de 651 avaliações no Google</p>
-<p>20 anos de experiência em Rio Verde</p>
+<p>Atendimento local em Rio Verde</p>
+<p>Rua Itagiba Gonzaga Jaime, 1640 - Centro</p>
+<p>(64) 3621-3682</p>
 
-<div class="address">
-Rua Itagiba Gonzaga Jaime, 1640<br>
-Centro - Rio Verde/GO<br>
-(64) 3621-3682
-</div>
-
-<a class="btn btn-yellow" href="https://wa.me/556436213682?text=Ol%C3%A1%2C%20vim%20pelo%20Google%20e%20preciso%20de%20ajuda%20com%20meu%20notebook.">CHAMAR NO WHATSAPP</a>
+<a class="btn" href="https://wa.me/556436213682?text=Ol%C3%A1%2C%20preciso%20de%20ajuda%20com%20meu%20notebook.">
+Chamar no WhatsApp
+</a>
 </section>
 
 <footer>
 <p><strong>SOS Informática</strong></p>
 <p>Rua Itagiba Gonzaga Jaime, 1640 - Centro - Rio Verde/GO</p>
 <p>Telefone e WhatsApp: (64) 3621-3682</p>
-<p style="margin-top:10px;">Política de Privacidade • Termos de Uso</p>
 </footer>
 
-<a class="whatsapp-float" href="https://wa.me/556436213682?text=Ol%C3%A1%2C%20quero%20um%20or%C3%A7amento%20para%20meu%20notebook." aria-label="Chamar no WhatsApp">☏</a>
+<a class="whatsapp" href="https://wa.me/556436213682?text=Ol%C3%A1%2C%20quero%20um%20or%C3%A7amento.">☎</a>
 
 </body>
 </html>
