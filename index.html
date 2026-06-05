@@ -261,13 +261,49 @@ border-radius:0;
 border:0;
 }
 
-.gallery-item p{
-padding:14px;
-font-weight:800;
-text-align:center;
-color:var(--azul);
+.slider{
+width:100%;
+overflow:hidden;
+border-radius:24px;
+box-shadow:0 20px 50px rgba(0,0,0,.12);
+background:white;
 }
 
+.slides{
+display:flex;
+width:400%;
+animation:slide 18s infinite;
+}
+
+.slides img{
+width:25%;
+height:520px;
+object-fit:cover;
+flex-shrink:0;
+}
+
+@keyframes slide{
+
+0%,20%{
+transform:translateX(0%);
+}
+
+25%,45%{
+transform:translateX(-25%);
+}
+
+50%,70%{
+transform:translateX(-50%);
+}
+
+75%,95%{
+transform:translateX(-75%);
+}
+
+100%{
+transform:translateX(0%);
+}
+}
 .cta{
 background:linear-gradient(135deg,#062b63 0%,#0b3f8a 100%);
 color:white;
@@ -371,6 +407,9 @@ min-height:auto;
 width:100%;
 text-align:center;
 }
+  .slides img{
+height:280px;
+}
 }
 </style>
 
@@ -428,16 +467,10 @@ Bancada técnica ou reparo em notebook
 
 </div>
 </section>
-<h2>Nossa estrutura</h2>
-<p class="section-sub">Depois você troca estes espaços por fotos reais de bancada, reparo e fachada.</p>
-
-<div class="gallery">
-<div class="gallery-item"><div class="placeholder">FOTO 1<br>Bancada</div><p>Bancada técnica</p></div>
-<div class="gallery-item"><div class="placeholder">FOTO 2<br>Reparo</div><p>Reparo em notebook</p></div>
-<div class="gallery-item"><div class="placeholder">FOTO 3<br>Equipe</div><p>Equipe técnica</p></div>
-<div class="gallery-item"><div class="placeholder">FOTO 4<br>Fachada</div><p>Loja física</p></div>
-</div>
-</section>
+1 - fachada.jpg
+2 - reparo1.jpg
+3 - reparo2.jpg
+4 - proprietario.jpg
 
 <section class="cta">
 <h2>Precisa de ajuda com seu notebook?</h2>
