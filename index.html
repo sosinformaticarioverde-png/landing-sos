@@ -227,6 +227,21 @@ margin-bottom:8px;
 color:var(--cinza);
 }
 
+.review-images{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:24px;
+align-items:start;
+}
+
+.review-images img{
+width:100%;
+border-radius:18px;
+box-shadow:0 14px 34px rgba(0,0,0,.08);
+border:1px solid #e6ecf5;
+background:white;
+}
+  
 .gallery{
 display:grid;
 grid-template-columns:repeat(4,1fr);
@@ -330,7 +345,8 @@ margin-bottom:25px;
 
 .strip-grid,
 .cards,
-.gallery{
+.gallery,
+.review-images{
 grid-template-columns:1fr 1fr;
 }
 }
@@ -338,7 +354,8 @@ grid-template-columns:1fr 1fr;
 @media(max-width:520px){
 .strip-grid,
 .cards,
-.gallery{
+.gallery,
+.review-images{
 grid-template-columns:1fr;
 }
 
@@ -401,46 +418,16 @@ Bancada técnica ou reparo em notebook
 
 <section class="section">
 <h2>O que nossos clientes dizem</h2>
-<p class="section-sub">
-Avaliações reais de clientes que confiaram na SOS Informática.
-</p>
+<p class="section-sub">Avaliações reais de clientes que confiaram na SOS Informática.</p>
 
-<div class="reviews">
+<div class="review-images">
 
-<div class="review-card">
-<div class="stars">★★★★★</div>
-<p>
-"Resolveram meu problema com meu notebook em minutos.
-Em outros lugares disseram que levaria dias."
-</p>
-<strong>Janete Santos</strong>
-<span>Cliente Google</span>
-</div>
-
-<div class="review-card">
-<div class="stars">★★★★★</div>
-<p>
-"Melhor assistência técnica de Rio Verde.
-Bom custo-benefício e rapidez na entrega."
-</p>
-<strong>Leanne Rodrigues</strong>
-<span>Cliente Google</span>
-</div>
-
-<div class="review-card">
-<div class="stars">★★★★★</div>
-<p>
-"Ótimo atendimento. Produto impecável.
-Recomendo de olhos fechados."
-</p>
-<strong>Bruna Gobbo</strong>
-<span>Cliente Google</span>
-</div>
+<img src="avaliacao-janete.webp" alt="Avaliação de cliente da SOS Informática">
+<img src="avaliacao-leanne.webp" alt="Avaliação de cliente da SOS Informática">
+<img src="avaliacao-bruna.webp" alt="Avaliação de cliente da SOS Informática">
 
 </div>
 </section>
-
-<section class="section">
 <h2>Nossa estrutura</h2>
 <p class="section-sub">Depois você troca estes espaços por fotos reais de bancada, reparo e fachada.</p>
 
