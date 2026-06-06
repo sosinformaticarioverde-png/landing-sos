@@ -1,1 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SOS Informática RV</title>
 
+<style>
+:root{
+  --azul:#001b3f;
+  --azul2:#002b66;
+  --amarelo:#f7b500;
+  --verde:#18c45c;
+  --branco:#ffffff;
+  --cinza:#f4f6f8;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+  font-family:Arial, Helvetica, sans-serif;
+  background:var(--azul);
+  color:var(--branco);
+}
+
+.page{
+  max-width:430px;
+  margin:0 auto;
+  background:linear-gradient(180deg,#001b3f,#002b66);
+  min-height:100vh;
+}
+
+.header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:18px 22px;
+}
+
+.logo{
+  width:120px;
+}
+
+.top-btn{
+  background:var(--verde);
+  color:white;
+  padding:12px 18px;
+  border-radius:12px;
+  text-decoration:none;
+  font-weight:800;
+  font-size:14px;
+}
+
+.hero-img{
+  width:100%;
+  height:320px;
+  object-fit:cover;
+  object-position:top center;
+  display:block;
+}
+
+.hero-content{
+  margin-top:-70px;
+  padding:80px 24px 28px;
+  text-align:center;
+  background:linear-gradient(180deg,rgba(0,27,63,0),#001b3f 35%);
+  position:relative;
+}
+
+h1{
+  font-size:36px;
+  line-height:1.08;
+  font-weight:900;
+  margin-bottom:14px;
+}
+
+.highlight{
+  display:inline-block;
+  background:rgba(247,181,0,.75);
+  color:white;
+  padding:4px 8px;
+  border-radius:4px;
+}
+
+.subtitle{
+  font-size:17px;
+  line-height:1.5;
+  color:#e8edf5;
+  margin-bottom:18px;
+}
+
+.trust-line{
+  display:flex;
+  justify-content:center;
+  gap:14px;
+  font-size:14px;
+  margin-bottom:22px;
+  color:#f5f5f5;
+}
+
+.cta{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  width:100%;
+  background:var(--verde);
+  color:white;
+  text-decoration:none;
+  font-size:22px;
+  font-weight:900;
+  padding:18px;
+  border-radius:16px;
+  box-shadow:0 8px 22px rgba(0,0,0,.25);
+}
+
+.section{
+  background:var(--cinza);
+  color:#06172f;
+  padding:24px 18px;
+}
+
+.card{
+  background:white;
+  border-radius:18px;
+  padding:24px;
+  box-shadow:0 8px 24px rgba(0,0,0,.12);
+  text-align:center;
+  margin-bottom:22px;
+}
+
+.section-title{
+  text-align:center;
+  font-size:18px;
+  font-weight:900;
+  color:#06172f;
+  margin-bottom:18px;
+}
+
+.stars{
+  color:var(--amarelo);
+  font-size:28px;
+  margin-bottom:12px;
+}
+
+.review-text{
+  font-size:18px;
+  line-height:1.45;
+  margin-bottom:18px;
+}
+
+.client{
+  font-weight:800;
+  font-size:17px;
+}
+
+.dots{
+  text-align:center;
+  margin-top:10px;
+}
+
+.dots span{
+  display:inline-block;
+  width:9px;
+  height:9px;
+  background:#cfd5dd;
+  border-radius:50%;
+  margin:0 4px;
+}
+
+.dots span.active{
+  background:var(--azul2);
+}
+
+.structure-img{
+  width:100%;
+  height:190px;
+  object-fit:cover;
+  border-radius:16px;
+  display:block;
+}
+
+.badges{
+  display:flex;
+  justify-content:space-between;
+  background:white;
+  border-radius:18px;
+  padding:18px 10px;
+  box-shadow:0 8px 24px rgba(0,0,0,.12);
+  margin-top:18px;
+  text-align:center;
+}
+
+.badges div{
+  flex:1;
+  font-size:15px;
+  font-weight:800;
+  color:#06172f;
+}
+
+.final-cta{
+  padding:26px 20px;
+  text-align:center;
+  background:linear-gradient(180deg,#002b66,#001b3f);
+}
+
+.final-cta h2{
+  font-size:26px;
+  line-height:1.15;
+  margin-bottom:18px;
+}
+
+.footer{
+  background:#001226;
+  padding:24px 22px;
+  font-size:14px;
+  line-height:1.6;
+  color:#dbe4ef;
+}
+
+.footer-logo{
+  width:110px;
+  margin-bottom:16px;
+}
+
+.footer strong{
+  color:white;
+}
+
+.float-whats{
+  position:fixed;
+  right:18px;
+  bottom:18px;
+  width:64px;
+  height:64px;
+  border-radius:50%;
+  background:var(--verde);
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  font-size:32px;
+  box-shadow:0 6px 18px rgba(0,0,0,.3);
+  z-index:99;
+}
+</style>
+</head>
+
+<body>
+
+<div class="page">
+
+  <header class="header">
+    <img src="logo-sos.webp" class="logo" alt="SOS Informática">
+    <a class="top-btn" href="https://wa.me/556436213682" target="_blank">WhatsApp</a>
+  </header>
+
+  <img src="loja-sos.png" class="hero-img" alt="Fachada SOS Informática">
+
+  <section class="hero-content">
+    <h1>
+      Especialistas em<br>
+      <span class="highlight">Notebooks e Computadores</span><br>
+      em Rio Verde
+    </h1>
+
+    <p class="subtitle">
+      Loja física, estrutura própria e mais de 600 avaliações positivas.
+    </p>
+
+    <div class="trust-line">
+      <span>⭐ +600 avaliações</span>
+      <span>📍 Rio Verde</span>
+      <span>🏢 Loja física</span>
+    </div>
+
+    <a class="cta" href="https://wa.me/556436213682?text=Ol%C3%A1%2C%20quero%20solicitar%20um%20or%C3%A7amento." target="_blank">
+      🟢 SOLICITAR ORÇAMENTO
+    </a>
+  </section>
+
+  <section class="section">
+    <h3 class="section-title">O QUE NOSSOS CLIENTES DIZEM</h3>
+
+    <div class="card">
+      <div class="stars">★★★★★</div>
+      <p class="review-text">
+        “Atendimento rápido e transparente. Resolveram meu problema antes do prazo.”
+      </p>
+      <div class="client">Bruno Martins</div>
+      <div class="dots">
+        <span class="active"></span><span></span><span></span>
+      </div>
+    </div>
+
+    <h3 class="section-title">CONHEÇA NOSSA ESTRUTURA</h3>
+
+    <img src="reparo1.jpg" class="structure-img" alt="Estrutura SOS Informática">
+
+    <div class="dots">
+      <span class="active"></span><span></span><span></span>
+    </div>
+
+    <div class="badges">
+      <div>⭐<br>+600 Avaliações</div>
+      <div>📍<br>Rio Verde</div>
+      <div>🏢<br>Loja Física</div>
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <h2>Precisa de ajuda com seu notebook?</h2>
+    <a class="cta" href="https://wa.me/556436213682?text=Ol%C3%A1%2C%20quero%20solicitar%20um%20or%C3%A7amento." target="_blank">
+      🟢 CHAMAR NO WHATSAPP
+    </a>
+  </section>
+
+  <footer class="footer">
+    <img src="logo-sos.webp" class="footer-logo" alt="SOS Informática">
+
+    <p><strong>Atendimento presencial em Rio Verde - GO</strong></p>
+    <p>Rua Itagiba Gonzaga Jaime, 1640<br>Setor Central, Rio Verde - GO</p>
+    <p>Telefone: (64) 3621-3682</p>
+    <p>CNPJ: 35.708.134/0001-46</p>
+    <p>ED MARTISN - SOS INFORMÁTICA E PERIFÉRICOS LTDA</p>
+  </footer>
+
+</div>
+
+<a class="float-whats" href="https://wa.me/556436213682" target="_blank">☏</a>
+
+</body>
+</html>
