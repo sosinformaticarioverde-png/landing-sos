@@ -15,3 +15,4 @@ export const PHONE_TEL = "+556436213682";
 export const INSTAGRAM_URL = "https://instagram.com/sosinformaticarv";
 export const FACEBOOK_URL = "https://facebook.com/sosinformaticarv";
 export const CNPJ = "35.708.134/0001-46";
+export const EMAIL = "contato@sosinformaticarv.com.br";
