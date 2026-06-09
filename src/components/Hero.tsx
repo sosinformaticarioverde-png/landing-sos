@@ -1,5 +1,5 @@
 import { Star, MapPin, ShieldCheck } from "lucide-react";
-import { WhatsAppIcon } from "@/components/WhatsAppIcon";
+import { MessageCircle } from "lucide-react";
 import logo from "@/assets/sos-logo.png";
 import fachada from "@/assets/fachada.jpg";
 import jean from "@/assets/reviews/jean.png";
@@ -29,7 +29,7 @@ export function Hero() {
           rel="noopener noreferrer"
           className="bg-gold-gradient inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-bold text-accent-foreground shadow-gold transition-transform hover:scale-[1.03] active:scale-95"
         >
-          <WhatsAppIcon className="h-4 w-4" />
+          <MessageCircle className="h-4 w-4" />
           WhatsApp
         </a>
       </nav>
@@ -58,7 +58,7 @@ export function Hero() {
               rel="noopener noreferrer"
               className="bg-gold-gradient inline-flex items-center justify-center gap-2 rounded-full px-7 py-4 text-base font-bold text-accent-foreground shadow-gold transition-transform hover:scale-[1.03] active:scale-95"
             >
-              <WhatsAppIcon className="h-5 w-5" />
+              <MessageCircle className="h-5 w-5" />
               Falar no WhatsApp
             </a>
             <a

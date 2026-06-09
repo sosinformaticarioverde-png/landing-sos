@@ -1,4 +1,4 @@
-import { WhatsAppIcon } from "@/components/WhatsAppIcon";
+import { MessageCircle } from "lucide-react";
 import { WHATSAPP_URL } from "@/lib/site";
 
 export function FinalCTA() {
@@ -23,7 +23,7 @@ export function FinalCTA() {
           rel="noopener noreferrer"
           className="bg-gold-gradient mt-8 inline-flex items-center justify-center gap-2 rounded-full px-9 py-5 text-lg font-bold text-accent-foreground shadow-gold transition-transform hover:scale-[1.03] active:scale-95"
         >
-          <WhatsAppIcon className="h-6 w-6" />
+          <MessageCircle className="h-6 w-6" />
           Falar no WhatsApp
         </a>
       </div>
