@@ -18,7 +18,7 @@ const items = [
   },
   {
     icon: Star,
-    title: "Nota 5,0 no Google",
+    title: "Nota 4,9 no Google",
     text: "Avaliações reais de clientes satisfeitos.",
   },
 ];
