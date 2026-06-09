@@ -36,10 +36,10 @@ const reviews: Review[] = [
     text: "O trabalho é de qualidade, recebi bastante atenção e dedicação no serviço, o rapaz explica tudo muito bem e parece extremamente esforçado. A entrega foi excelente, com certeza faria negócio novamente.",
   },
   {
-    name: "Felipe Negro",
+    name: "Felipe",
     meta: "2 meses atrás",
     avatar: felipe,
-    text: "Atendimento impecável, sempre colocando o cliente em primeiro lugar… recomendo a todos, meu MacBook ficou como se tivesse saído da loja.",
+    text: "Atendimento impecável, sempre colocando o cliente em primeiro lugar… 
   },
   {
     name: "Rodrigo Nunes",
