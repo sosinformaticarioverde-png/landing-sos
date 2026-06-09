@@ -1,4 +1,5 @@
-import { Star, MessageCircle, MapPin, ShieldCheck } from "lucide-react";
+import { Star, MapPin, ShieldCheck } from "lucide-react";
+import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 import logo from "@/assets/sos-logo.png";
 import fachada from "@/assets/fachada.jpg";
 import jean from "@/assets/reviews/jean.png";
@@ -28,7 +29,7 @@ export function Hero() {
           rel="noopener noreferrer"
           className="bg-gold-gradient inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-bold text-accent-foreground shadow-gold transition-transform hover:scale-[1.03] active:scale-95"
         >
-          <MessageCircle className="h-4 w-4" strokeWidth={2.4} />
+          <WhatsAppIcon className="h-4 w-4" />
           WhatsApp
         </a>
       </nav>
@@ -46,8 +47,8 @@ export function Hero() {
           </h1>
 
           <p className="mx-auto mt-5 max-w-md text-base leading-relaxed text-white/85 sm:text-lg lg:mx-0">
-            Atendimento local, transparente e confiável para quem procura uma
-            empresa séria em Rio Verde.
+            Loja física própria no Centro de Rio Verde. Empresa local,
+            transparente e confiável, com atendimento direto pela nossa equipe.
           </p>
 
           <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:justify-center lg:justify-start">
@@ -57,7 +58,7 @@ export function Hero() {
               rel="noopener noreferrer"
               className="bg-gold-gradient inline-flex items-center justify-center gap-2 rounded-full px-7 py-4 text-base font-bold text-accent-foreground shadow-gold transition-transform hover:scale-[1.03] active:scale-95"
             >
-              <MessageCircle className="h-5 w-5" strokeWidth={2.4} />
+              <WhatsAppIcon className="h-5 w-5" />
               Falar no WhatsApp
             </a>
             <a
@@ -87,7 +88,7 @@ export function Hero() {
                 {Array.from({ length: 5 }).map((_, i) => (
                   <Star key={i} className="h-4 w-4 fill-gold text-gold" />
                 ))}
-                <span className="ml-1 text-sm font-bold">5,0</span>
+                <span className="ml-1 text-sm font-bold">4,9</span>
               </div>
               <p className="text-xs text-white/75">Avaliações reais no Google</p>
             </div>
