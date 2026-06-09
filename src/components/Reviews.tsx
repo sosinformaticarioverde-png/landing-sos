@@ -39,7 +39,7 @@ const reviews: Review[] = [
     name: "Felipe",
     meta: "2 meses atrás",
     avatar: felipe,
-    text: "Atendimento impecável, sempre colocando o cliente em primeiro lugar… 
+    text: "Atendimento impecável, sempre colocando o cliente em primeiro lugar."
   },
   {
     name: "Rodrigo Nunes",
