@@ -21,7 +21,7 @@ const reviews: Review[] = [
     name: "Sarah Bezerra",
     meta: "3 semanas atrás",
     avatar: sarah,
-    text: "Precisei realizar o reparo do meu notebook com eles e fiquei extremamente satisfeito com o atendimento prestado. A equipe foi muito atenciosa, cordial e ágil em todo o processo. Recomendo a todos que procuram qualidade e eficiência.",
+    text: "Precisei realizar um serviço com eles e fiquei extremamente satisfeita com o atendimento prestado. A equipe foi muito atenciosa, cordial e ágil em todo o processo. Recomendo a todos que procuram qualidade e eficiência.",
   },
   {
     name: "Jean Carlos",
