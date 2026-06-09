@@ -18,7 +18,7 @@ export function SiteFooter() {
         <div>
           <img src={logo} alt="SOS Informática" className="h-12 w-auto" />
           <p className="mt-4 max-w-xs text-sm text-white/70">
-            Especialistas em notebooks e desktops. Atendimento local,
+            Especialistas em Notebooks e Desktops. Atendimento local,
             transparente e confiável em Rio Verde - GO.
           </p>
         </div>
