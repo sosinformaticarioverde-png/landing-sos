@@ -1,4 +1,5 @@
-import { Phone, MapPin, Instagram, Facebook, Mail, MessageCircle } from "lucide-react";
+import { Phone, MapPin, Instagram, Facebook, Mail } from "lucide-react";
+import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 import logo from "@/assets/sos-logo.png";
 import {
   WHATSAPP_URL,
@@ -18,7 +19,7 @@ export function SiteFooter() {
         <div>
           <img src={logo} alt="SOS Informática" className="h-12 w-auto" />
           <p className="mt-4 max-w-xs text-sm text-white/70">
-            Especialistas em Notebooks e Desktops. Atendimento local,
+            Especialistas em notebooks e desktops. Atendimento local,
             transparente e confiável em Rio Verde - GO.
           </p>
         </div>
@@ -30,7 +31,7 @@ export function SiteFooter() {
           <ul className="mt-4 space-y-3 text-sm">
             <li>
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2.5 hover:text-white">
-                <MessageCircle className="h-4 w-4 text-gold" /> WhatsApp {PHONE_DISPLAY}
+                <WhatsAppIcon className="h-4 w-4 text-gold" /> WhatsApp {PHONE_DISPLAY}
               </a>
             </li>
             <li>

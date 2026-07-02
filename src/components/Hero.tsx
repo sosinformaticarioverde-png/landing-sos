@@ -1,12 +1,12 @@
 import { Star, MapPin, ShieldCheck } from "lucide-react";
-import { MessageCircle } from "lucide-react";
+import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 import logo from "@/assets/sos-logo.png";
 import fachada from "@/assets/fachada.jpg";
 import jean from "@/assets/reviews/jean.png";
 import ana from "@/assets/reviews/ana.png";
 import sarah from "@/assets/reviews/sarah.png";
 import felipe from "@/assets/reviews/felipe.png";
-import { WHATSAPP_URL, GOOGLE_REVIEWS_URL } from "@/lib/site";
+import { WHATSAPP_URL } from "@/lib/site";
 
 const faces = [jean, ana, sarah, felipe];
 
@@ -29,7 +29,7 @@ export function Hero() {
           rel="noopener noreferrer"
           className="bg-gold-gradient inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-bold text-accent-foreground shadow-gold transition-transform hover:scale-[1.03] active:scale-95"
         >
-          <MessageCircle className="h-4 w-4" />
+          <WhatsAppIcon className="h-4 w-4" />
           WhatsApp
         </a>
       </nav>
@@ -42,13 +42,13 @@ export function Hero() {
           </span>
 
           <h1 className="mt-5 text-[2.1rem] font-extrabold leading-[1.05] sm:text-5xl lg:text-[3.4rem]">
-            Especialistas em{" "}
-            <span className="text-gold">notebooks e desktops</span>
+            Seu notebook ou PC{" "}
+            <span className="text-gold">resolvido com quem entende</span>
           </h1>
 
           <p className="mx-auto mt-5 max-w-md text-base leading-relaxed text-white/85 sm:text-lg lg:mx-0">
-            Loja física própria no Centro de Rio Verde. Empresa local,
-            transparente e confiável, com atendimento direto pela nossa equipe.
+            Loja física no Centro de Rio Verde, atendimento direto e sem
+            enrolação. Fale agora pelo WhatsApp e resolva ainda hoje.
           </p>
 
           <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:justify-center lg:justify-start">
@@ -56,20 +56,13 @@ export function Hero() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gold-gradient inline-flex items-center justify-center gap-2 rounded-full px-7 py-4 text-base font-bold text-accent-foreground shadow-gold transition-transform hover:scale-[1.03] active:scale-95"
+              className="bg-gold-gradient animate-cta-glow inline-flex items-center justify-center gap-2 rounded-full px-8 py-5 text-lg font-extrabold text-accent-foreground shadow-gold transition-transform hover:scale-[1.04] active:scale-95"
             >
-              <MessageCircle className="h-5 w-5" />
-              Falar no WhatsApp
-            </a>
-            <a
-              href={GOOGLE_REVIEWS_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-white/30 bg-white/5 px-7 py-4 text-base font-semibold text-white backdrop-blur-sm transition-colors hover:bg-white/15"
-            >
-              Ver avaliações no Google
+              <WhatsAppIcon className="h-6 w-6" />
+              Chamar no WhatsApp agora
             </a>
           </div>
+
 
           {/* social proof above the fold */}
           <div className="mt-8 flex items-center justify-center gap-4 lg:justify-start">
