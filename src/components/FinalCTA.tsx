@@ -1,5 +1,5 @@
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
-import { WHATSAPP_URL } from "@/lib/site";
+import { WHATSAPP_URL, trackWhatsAppClick } from "@/lib/site";
 
 export function FinalCTA() {
   return (
@@ -20,6 +20,7 @@ export function FinalCTA() {
         </p>
         <a
           href={WHATSAPP_URL}
+          onClick={trackWhatsAppClick}
           target="_blank"
           rel="noopener noreferrer"
           className="bg-gold-gradient animate-cta-glow mt-8 inline-flex items-center justify-center gap-2 rounded-full px-10 py-5 text-lg font-extrabold text-accent-foreground shadow-gold transition-transform hover:scale-[1.04] active:scale-95"

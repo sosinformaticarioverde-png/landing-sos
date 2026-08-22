@@ -3,6 +3,7 @@ import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 import logo from "@/assets/sos-logo.png";
 import {
   WHATSAPP_URL,
+  trackWhatsAppClick,
   GOOGLE_MAPS_URL,
   PHONE_DISPLAY,
   PHONE_TEL,
@@ -30,7 +31,7 @@ export function SiteFooter() {
           </h3>
           <ul className="mt-4 space-y-3 text-sm">
             <li>
-              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2.5 hover:text-white">
+              <a href={WHATSAPP_URL} onClick={trackWhatsAppClick} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2.5 hover:text-white">
                 <WhatsAppIcon className="h-4 w-4 text-gold" /> WhatsApp {PHONE_DISPLAY}
               </a>
             </li>

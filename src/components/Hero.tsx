@@ -6,7 +6,7 @@ import jean from "@/assets/reviews/jean.png";
 import ana from "@/assets/reviews/ana.png";
 import sarah from "@/assets/reviews/sarah.png";
 import felipe from "@/assets/reviews/felipe.png";
-import { WHATSAPP_URL } from "@/lib/site";
+import { WHATSAPP_URL, trackWhatsAppClick } from "@/lib/site";
 
 const faces = [jean, ana, sarah, felipe];
 
@@ -25,6 +25,7 @@ export function Hero() {
         <img src={logo} alt="SOS Informática" className="h-9 w-auto sm:h-11" />
         <a
           href={WHATSAPP_URL}
+          onClick={trackWhatsAppClick}
           target="_blank"
           rel="noopener noreferrer"
           className="bg-gold-gradient inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-bold text-accent-foreground shadow-gold transition-transform hover:scale-[1.03] active:scale-95"
@@ -54,6 +55,7 @@ export function Hero() {
           <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:justify-center lg:justify-start">
             <a
               href={WHATSAPP_URL}
+              onClick={trackWhatsAppClick}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gold-gradient animate-cta-glow inline-flex items-center justify-center gap-2 rounded-full px-8 py-5 text-lg font-extrabold text-accent-foreground shadow-gold transition-transform hover:scale-[1.04] active:scale-95"

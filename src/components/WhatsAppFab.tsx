@@ -1,10 +1,11 @@
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
-import { WHATSAPP_URL } from "@/lib/site";
+import { WHATSAPP_URL, trackWhatsAppClick } from "@/lib/site";
 
 export function WhatsAppFab() {
   return (
     <a
       href={WHATSAPP_URL}
+      onClick={trackWhatsAppClick}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Falar no WhatsApp"
