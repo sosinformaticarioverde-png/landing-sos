@@ -26,8 +26,6 @@ export const CNPJ = "35.708.134/0001-46";
 
 export function trackWhatsAppClick() {
   if (typeof window !== "undefined" && typeof window.gtag === "function") {
-    window.gtag("event", "conversion", {
-      send_to: "AW-596016870",
-    });
+    window.gtag("event", "ads_conversion_WhatsApp_1");
   }
 }
