@@ -10,6 +10,14 @@ export const WHATSAPP_URL =
     "Olá! Vim pelo Google e gostaria de falar com a SOS Informática.",
   );
 
+// Mesmo número comercial, texto diferenciado para atribuir o lead como
+// tráfego pago (Google Ads). Usado exclusivamente na landing /google-ads.
+export const WHATSAPP_URL_ADS =
+  "https://wa.me/556436213682?text=" +
+  encodeURIComponent(
+    "Olá! Vim pelo Google Ads e gostaria de falar com a SOS Informática.",
+  );
+
 export const GOOGLE_REVIEWS_URL =
   "https://www.google.com/maps/search/?api=1&query=SOS+Inform%C3%A1tica+Rio+Verde+GO";
 

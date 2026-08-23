@@ -1,7 +1,12 @@
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 import { WHATSAPP_URL, trackWhatsAppClick } from "@/lib/site";
 
-export function FinalCTA() {
+interface FinalCTAProps {
+  /** URL do WhatsApp usada no CTA. Default: WHATSAPP_URL. */
+  whatsappUrl?: string;
+}
+
+export function FinalCTA({ whatsappUrl = WHATSAPP_URL }: FinalCTAProps = {}) {
   return (
     <section className="bg-hero relative overflow-hidden py-16 text-white sm:py-24">
       <div
@@ -19,7 +24,7 @@ export function FinalCTA() {
           compromisso.
         </p>
         <a
-          href={WHATSAPP_URL}
+          href={whatsappUrl}
           onClick={trackWhatsAppClick}
           target="_blank"
           rel="noopener noreferrer"

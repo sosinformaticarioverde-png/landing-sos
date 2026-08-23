@@ -1,10 +1,15 @@
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 import { WHATSAPP_URL, trackWhatsAppClick } from "@/lib/site";
 
-export function WhatsAppFab() {
+interface WhatsAppFabProps {
+  /** URL do WhatsApp usada no botão flutuante. Default: WHATSAPP_URL. */
+  whatsappUrl?: string;
+}
+
+export function WhatsAppFab({ whatsappUrl = WHATSAPP_URL }: WhatsAppFabProps = {}) {
   return (
     <a
-      href={WHATSAPP_URL}
+      href={whatsappUrl}
       onClick={trackWhatsAppClick}
       target="_blank"
       rel="noopener noreferrer"
