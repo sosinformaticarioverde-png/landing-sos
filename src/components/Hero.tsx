@@ -10,7 +10,14 @@ import { WHATSAPP_URL, trackWhatsAppClick } from "@/lib/site";
 
 const faces = [jean, ana, sarah, felipe];
 
-export function Hero() {
+interface HeroProps {
+  /** Exibe o menu de navegação superior (logo + botão). Default: true. */
+  showNav?: boolean;
+  /** URL do WhatsApp usada nos CTAs. Default: WHATSAPP_URL. */
+  whatsappUrl?: string;
+}
+
+export function Hero({ showNav = true, whatsappUrl = WHATSAPP_URL }: HeroProps = {}) {
   return (
     <header className="bg-hero relative overflow-hidden text-white">
       {/* subtle glow */}
@@ -21,19 +28,21 @@ export function Hero() {
       />
 
       {/* top bar */}
-      <nav className="relative z-10 mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
-        <img src={logo} alt="SOS Informática" className="h-9 w-auto sm:h-11" />
-        <a
-          href={WHATSAPP_URL}
-          onClick={trackWhatsAppClick}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-gold-gradient inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-bold text-accent-foreground shadow-gold transition-transform hover:scale-[1.03] active:scale-95"
-        >
-          <WhatsAppIcon className="h-4 w-4" />
-          WhatsApp
-        </a>
-      </nav>
+      {showNav && (
+        <nav className="relative z-10 mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
+          <img src={logo} alt="SOS Informática" className="h-9 w-auto sm:h-11" />
+          <a
+            href={whatsappUrl}
+            onClick={trackWhatsAppClick}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-gold-gradient inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-bold text-accent-foreground shadow-gold transition-transform hover:scale-[1.03] active:scale-95"
+          >
+            <WhatsAppIcon className="h-4 w-4" />
+            WhatsApp
+          </a>
+        </nav>
+      )}
 
       <div className="relative z-10 mx-auto grid max-w-6xl items-center gap-10 px-5 pb-16 pt-6 sm:pt-10 lg:grid-cols-2 lg:gap-12 lg:pb-24">
         <div className="animate-float-up text-center lg:text-left">
@@ -54,7 +63,7 @@ export function Hero() {
 
           <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:justify-center lg:justify-start">
             <a
-              href={WHATSAPP_URL}
+              href={whatsappUrl}
               onClick={trackWhatsAppClick}
               target="_blank"
               rel="noopener noreferrer"
