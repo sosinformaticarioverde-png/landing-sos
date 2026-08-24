@@ -23,6 +23,10 @@ export function SiteFooter() {
             Especialistas em notebooks e desktops. Atendimento local,
             transparente e confiável em Rio Verde - GO.
           </p>
+          <p className="mt-3 max-w-xs text-sm text-white/60">
+            Conserto de notebooks, assistência técnica e manutenção de
+            computadores em Rio Verde - GO.
+          </p>
         </div>
 
         <div>
