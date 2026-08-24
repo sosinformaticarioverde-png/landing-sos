@@ -1,6 +1,7 @@
 import { Hero } from "@/components/Hero";
 import { SocialProof } from "@/components/SocialProof";
 import { Reviews } from "@/components/Reviews";
+import { Services } from "@/components/Services";
 import { FinalCTA } from "@/components/FinalCTA";
 import { LocationMap } from "@/components/LocationMap";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -12,6 +13,7 @@ export default function App() {
       <Hero />
       <SocialProof />
       <Reviews />
+      <Services />
       <FinalCTA />
       <LocationMap />
       <SiteFooter />
